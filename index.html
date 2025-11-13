@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Telecel Marketplace Pilot Payments & Cashback Dashboard</title>
+  <meta name="description" content="Telecel Marketplace Pilot Payments & Cashback Dashboard powered by static JSON." />
+  <style>
+    body {font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;background: radial-gradient(circle at top, #0f172a 0, #020617 52%);color: #e5e7eb;padding: 20px;margin: 0;}
+    h1, h2 {margin-bottom: 10px;} h1 {font-size: 1.6rem;} h2 {font-size: 1.2rem;}
+    .period {font-size: 0.9rem;color: #9ca3af;margin-bottom: 20px;}
+    .dashboard {max-width: 1100px;margin: auto;display: grid;grid-template-columns: 2fr 1fr;gap: 20px;}
+    .card {background: rgba(15, 23, 42, 0.9);border: 1px solid rgba(148,163,184,0.2);border-radius: 12px;padding: 16px;box-shadow: 0 4px 12px rgba(0,0,0,0.3);}
+    .metrics {display: grid;grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));gap: 10px;margin-bottom: 20px;}
+    .metric {background: rgba(30,41,59,0.8);padding: 10px 14px;border-radius: 10px;border: 1px solid rgba(148,163,184,0.2);}
+    .metric .label {font-size: 0.8rem;color: #9ca3af;} .metric .value {font-size: 1.3rem;font-weight: 600;color: #f1f5f9;}
+    table {width: 100%;border-collapse: collapse;font-size: 0.85rem;} th, td {padding: 6px;border-bottom: 1px solid rgba(148,163,184,0.15);} th {color: #9ca3af;text-align: left;}
+    td.amount {text-align: right;}
+    .rank {display: inline-block;width: 22px;height: 22px;text-align: center;border-radius: 50%;background: #334155;color: #f1f5f9;font-size: 0.8rem;line-height: 22px;}
+    .gold {background: gold;color: #000;} .silver {background: silver;color: #000;} .bronze {background: #cd7f32;color: #fff;}
+    .scroll-table {max-height: 300px;overflow-y: auto;margin-top: 10px;} .full-width-card {max-width: 1100px;margin: 20px auto 0;}
+    @media (max-width: 800px){.dashboard {grid-template-columns: 1fr;}}
+    .muted {color:#9ca3af;font-size:0.85rem;}
+  </style>
+</head>
+<body>
+  <h1>Telecel Marketplace Pilot Payments & Cashback Dashboard</h1>
+  <div class="period">Period: <span data-id="period">—</span></div>
+
+  <div class="dashboard">
+    <!-- LEFT: Summary & User Metrics -->
+    <div>
+      <!-- Top Metric Cards -->
+      <div class="metrics">
+        <div class="metric"><div class="label">Total Transactions</div><div class="value" data-id="totalTransactions">—</div></div>
+        <div class="metric"><div class="label">Successful Transactions</div><div class="value" data-id="successfulTransactions">—</div></div>
+        <div class="metric"><div class="label">GMV (Completed)</div><div class="value" data-id="gmv">—</div></div>
+        <div class="metric"><div class="label">Average Order Value</div><div class="value" data-id="aov">—</div></div>
+        <div class="metric"><div class="label">Highest Order Value</div><div class="value" data-id="highestOrder">—</div></div>
+        <div class="metric"><div class="label">Total Cashback</div><div class="value" data-id="totalCashback">—</div></div>
+        <div class="metric"><div class="label">Average Cashback</div><div class="value" data-id="avgCashback">—</div></div>
+        <div class="metric"><div class="label">Highest Cashback</div><div class="value" data-id="highestCashback">—</div></div>
+      </div>
+
+      <!-- User Metrics -->
+      <div class="card">
+        <h2>User Metrics</h2>
+        <p><strong>Total Users:</strong> <span data-id="totalUsers">—</span></p>
+        <p><strong>Unique Users:</strong> <span data-id="uniqueUsers">—</span></p>
+        <p><strong>Users with Repeat Transactions:</strong> <span data-id="repeatUsers">—</span></p>
+      </div>
+    </div>
+
+    <!-- RIGHT: Cashback Leaderboard -->
+    <div class="card">
+      <h2>🏆 Cashback Leaderboard</h2>
+      <table>
+        <thead>
+          <tr><th>Rank</th><th>User</th><th class="amount">Cashback (GHC)</th></tr>
+        </thead>
+        <tbody id="leaderboard-body"></tbody>
+      </table>
+      <div class="muted">Phone numbers are masked for privacy.</div>
+    </div>
+  </div>
+
+  <!-- FULL-WIDTH DAILY SUMMARY -->
+  <section class="card full-width-card">
+    <h2>📅 Daily Transaction Summary</h2>
+    <div class="scroll-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th><th># Txns</th><th># Success</th><th>GMV (GHC)</th><th>AOV</th><th>Max Order</th>
+            <th># Cashback</th><th>Total CB</th><th>Avg CB</th><th>Max CB</th><th># Users</th><th># Unique</th><th># Repeat</th>
+          </tr>
+        </thead>
+        <tbody id="daily-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <script>
+  (async function () {
+    try {
+      const res = await fetch('data.json', { cache: 'no-store' });
+      const data = await res.json();
+      const q = (sel) => document.querySelector(sel);
+      const set = (id, val) => { const el = q(`[data-id="${id}"]`); if (el) el.textContent = val; };
+
+      // Period
+      set('period', data.period);
+
+      const s = data.summary;
+      const money = (v) => `GHC ${Number(v).toLocaleString(undefined, { maximumFractionDigits: 2 })}`;
+      const num = (v) => Number(v).toLocaleString();
+
+      set('totalTransactions', num(s.totalTransactions));
+      set('successfulTransactions', num(s.successfulTransactions));
+      set('gmv', money(s.gmv));
+      set('aov', money(s.aov));
+      set('highestOrder', money(s.highestOrder));
+      set('totalCashback', money(s.totalCashback));
+      set('avgCashback', money(s.avgCashback));
+      set('highestCashback', money(s.highestCashback));
+      set('totalUsers', num(s.totalUsers));
+      set('uniqueUsers', num(s.uniqueUsers));
+      set('repeatUsers', `${num(s.repeatUsers)} (~${Math.round((s.repeatUsers / s.uniqueUsers) * 100)}%)`);
+
+      // Leaderboard
+      const lb = data.leaderboard || [];
+      const tbodyLb = document.getElementById('leaderboard-body');
+      tbodyLb.innerHTML = lb.map(r => {
+        const rankClass = r.rank === 1 ? 'gold' : r.rank === 2 ? 'silver' : r.rank === 3 ? 'bronze' : '';
+        return `<tr><td><span class="rank ${rankClass}">${r.rank}</span></td><td>${r.phone}</td><td class="amount">${r.cashback.toFixed(2)}</td></tr>`;
+      }).join('');
+
+      // Daily
+      const daily = data.daily || [];
+      const tbodyDaily = document.getElementById('daily-body');
+      tbodyDaily.innerHTML = daily.map(d => `
+        <tr>
+          <td>${d[0]}</td><td>${d[1]}</td><td>${d[2]}</td>
+          <td>${Number(d[3]).toFixed(2)}</td><td>${Number(d[4]).toFixed(2)}</td><td>${Number(d[5]).toFixed(2)}</td>
+          <td>${d[6]}</td><td>${Number(d[7]).toFixed(2)}</td><td>${Number(d[8]).toFixed(2)}</td><td>${Number(d[9]).toFixed(2)}</td>
+          <td>${d[10]}</td><td>${d[11]}</td><td>${d[12]}</td>
+        </tr>
+      `).join('');
+    } catch (e) {
+      console.error('Failed to load data.json', e);
+      const warn = document.createElement('div');
+      warn.textContent = 'Failed to load data.json. Please ensure it exists at the site root.';
+      warn.style.color = '#f87171';
+      warn.style.marginTop = '12px';
+      document.body.appendChild(warn);
+    }
+  })();
+  </script>
+</body>
+</html>
