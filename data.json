@@ -28,37 +28,42 @@
     {
       "rank": 3,
       "phone": "020xxxx714",
-      "cashback": 4.18
+      "cashback": 5.08
     },
     {
       "rank": 4,
-      "phone": "020xxxx182",
-      "cashback": 4.0
+      "phone": "020xxxx899",
+      "cashback": 4.50
     },
     {
       "rank": 5,
-      "phone": "020xxxx899",
-      "cashback": 3.3
+      "phone": "020xxxx182",
+      "cashback": 4.00
     },
     {
       "rank": 6,
-      "phone": "020xxxx054",
-      "cashback": 2.5
+      "phone": "020xxxx377",
+      "cashback": 2.60
     },
     {
       "rank": 7,
-      "phone": "020xxxx230",
-      "cashback": 2.4
+      "phone": "020xxxx054",
+      "cashback": 2.50
     },
     {
       "rank": 8,
-      "phone": "020xxxx312",
-      "cashback": 2.0
+      "phone": "020xxxx230",
+      "cashback": 2.40
     },
     {
       "rank": 9,
-      "phone": "020xxxx172",
-      "cashback": 1.7
+      "phone": "020xxxx047",
+      "cashback": 2.06
+    },
+    {
+      "rank": 10,
+      "phone": "020xxxx312",
+      "cashback": 2.00
     }
   ],
   "daily": [
