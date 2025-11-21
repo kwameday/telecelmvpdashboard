@@ -1,64 +1,69 @@
 {
-  "period": "October 21, 2025 to November 11, 2025",
+  "period": "October 21, 2025 to November 20, 2025",
   "summary": {
-    "totalTransactions": 101,
-    "successfulTransactions": 92,
-    "gmv": 3700,
-    "aov": 30.58,
+    "totalTransactions": 187,
+    "successfulTransactions": 175,
+    "gmv": 8026,
+    "aov": 36.14,
     "highestOrder": 200,
-    "successfulCashback": 88,
-    "totalCashback": 71.74,
-    "avgCashback": 0.62,
+    "successfulCashback": 168,
+    "totalCashback": 155.86,
+    "avgCashback": 0.73,
     "highestCashback": 4,
-    "totalUsers": 101,
-    "uniqueUsers": 91,
-    "repeatUsers": 10
+    "totalUsers": 183,
+    "uniqueUsers": 101,
+    "repeatUsers": 39
   },
   "leaderboard": [
     {
       "rank": 1,
-      "phone": "020xxxx977",
-      "cashback": 7.2
+      "phone": "020xxxx232",
+      "cashback": 9.28
     },
     {
       "rank": 2,
-      "phone": "020xxxx232",
-      "cashback": 5.64
+      "phone": "020xxxx977",
+      "cashback": 8.80
     },
     {
       "rank": 3,
       "phone": "020xxxx714",
-      "cashback": 4.18
+      "cashback": 5.88
     },
     {
       "rank": 4,
-      "phone": "020xxxx182",
-      "cashback": 4.0
+      "phone": "020xxxx377",
+      "cashback": 4.60
     },
     {
       "rank": 5,
       "phone": "020xxxx899",
-      "cashback": 3.3
+      "cashback": 4.50
     },
     {
       "rank": 6,
-      "phone": "020xxxx054",
-      "cashback": 2.5
+      "phone": "020xxxx575",
+      "cashback": 4.10
     },
     {
       "rank": 7,
-      "phone": "020xxxx230",
-      "cashback": 2.4
+      "phone": "020xxxx919",
+      "cashback": 4.00
     },
     {
       "rank": 8,
-      "phone": "020xxxx312",
-      "cashback": 2.0
+      "phone": "020xxxx182",
+      "cashback": 4.00
     },
     {
       "rank": 9,
-      "phone": "020xxxx172",
-      "cashback": 1.7
+      "phone": "020xxxx312",
+      "cashback": 3.88
+    },
+     {
+      "rank": 10,
+      "phone": "020xxxx692",
+      "cashback": 3.52
     }
   ],
   "frequencyLeaderboard": [
@@ -292,6 +297,66 @@
       3.2,
       20,
       19,
+      1
+    ],
+     [
+      "13-Nov",
+      14,
+      14,
+      833.0,
+      60.0,
+      200.0,
+      14,
+      16.66,
+      1.19,
+      4.0,
+      14,
+      13,
+      1
+    ],
+    [
+      "17-Nov",
+      22,
+      21,
+      1118.0,
+      53.24,
+      120.0,
+      20,
+      21.56,
+      1.08,
+      2.40,
+      22,
+      21,
+      1
+    ],
+    [
+      "18-Nov",
+      25,
+      23,
+      865.0,
+      37.61,
+      80.0,
+      21,
+      15.70,
+      0.75,
+      1.60,
+      21,
+      19,
+      2
+    ],
+    [
+      "20-Nov",
+      25,
+      25,
+      1510.0,
+      60.40,
+      176.0,
+      25,
+      30.20,
+      1.21,
+      3.52,
+      25,
+      24,
       1
     ]
   ]
