@@ -1,24 +1,24 @@
 {
-  "period": "October 21, 2025 to November 20, 2025",
+  "period": "October 21, 2025 to November 24, 2025",
   "summary": {
-    "totalTransactions": 187,
-    "successfulTransactions": 175,
-    "gmv": 8026,
-    "aov": 36.14,
+    "totalTransactions": 204,
+    "successfulTransactions": 189,
+    "gmv": 8590,
+    "aov": 36.51,
     "highestOrder": 200,
-    "successfulCashback": 168,
-    "totalCashback": 155.86,
+    "successfulCashback": 182,
+    "totalCashback": 167.14,
     "avgCashback": 0.73,
     "highestCashback": 4,
-    "totalUsers": 183,
-    "uniqueUsers": 101,
-    "repeatUsers": 39
+    "totalUsers": 198,
+    "uniqueUsers": 109,
+    "repeatUsers": 44
   },
   "leaderboard": [
     {
       "rank": 1,
       "phone": "020xxxx232",
-      "cashback": 9.28
+      "cashback": 10.08
     },
     {
       "rank": 2,
@@ -27,23 +27,23 @@
     },
     {
       "rank": 3,
+      "phone": "020xxxx899",
+      "cashback": 6.10
+    },
+    {
+      "rank": 4,
       "phone": "020xxxx714",
       "cashback": 5.88
     },
     {
-      "rank": 4,
-      "phone": "020xxxx377",
-      "cashback": 4.60
-    },
-    {
       "rank": 5,
-      "phone": "020xxxx899",
-      "cashback": 4.50
+      "phone": "020xxxx377",
+      "cashback": 5.40
     },
     {
       "rank": 6,
       "phone": "020xxxx575",
-      "cashback": 4.10
+      "cashback": 4.90
     },
     {
       "rank": 7,
@@ -70,41 +70,41 @@
     {
       "rank": 1,
       "phone": "020xxxx232",
-      "frequency": 9
+      "frequency": 10
     },
     {
       "rank": 2,
       "phone": "020xxxx899",
-      "frequency": 6
+      "frequency": 7
     },
     {
       "rank": 3,
-      "phone": "050xxxx680",
+      "phone": "020xxxx377",
       "frequency": 6
     },
     {
       "rank": 4,
-      "phone": "020xxxx054",
-      "frequency": 5
+      "phone": "050xxxx680",
+      "frequency": 6
     },
     {
       "rank": 5,
-      "phone": "020xxxx377",
+      "phone": "020xxxx575",
       "frequency": 5
     },
     {
       "rank": 6,
-      "phone": "020xxxx714",
+      "phone": "020xxxx054",
       "frequency": 5
     },
     {
       "rank": 7,
-      "phone": "020xxxx973",
-      "frequency": 4
+      "phone": "020xxxx714",
+      "frequency": 5
     },
     {
       "rank": 8,
-      "phone": "020xxxx575",
+      "phone": "020xxxx973",
       "frequency": 4
     },
     {
@@ -358,6 +358,21 @@
       25,
       24,
       1
+    ],
+    [
+      "24-Nov",
+      17,
+      14,
+      564.0,
+      40.29,
+      80.0,
+      14,
+      11.28,
+      0.81,
+      1.60,
+      15,
+      15,
+      0
     ]
   ]
 }
