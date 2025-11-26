@@ -11,48 +11,48 @@
     "avgCashback": 0.73,
     "highestCashback": 4,
     "totalUsers": 227,
-    "uniqueUsers": 109,
-    "repeatUsers": 44
+    "uniqueUsers": 124,
+    "repeatUsers": 50
   },
   "leaderboard": [
     {
       "rank": 1,
+      "phone": "020xxxx977",
+      "cashback": 10.14
+    },
+    {
+      "rank": 2,
       "phone": "020xxxx232",
       "cashback": 10.08
     },
     {
-      "rank": 2,
-      "phone": "020xxxx977",
-      "cashback": 8.80
+      "rank": 3,
+      "phone": "020xxxx377",
+      "cashback": 6.20
     },
     {
-      "rank": 3,
+      "rank": 4,
       "phone": "020xxxx899",
       "cashback": 6.10
     },
     {
-      "rank": 4,
+      "rank": 5,
       "phone": "020xxxx714",
       "cashback": 5.88
     },
     {
-      "rank": 5,
-      "phone": "020xxxx377",
-      "cashback": 5.40
+      "rank": 6,
+      "phone": "020xxxx182",
+      "cashback": 5.60
     },
     {
-      "rank": 6,
+      "rank": 7,
       "phone": "020xxxx575",
       "cashback": 4.90
     },
     {
-      "rank": 7,
-      "phone": "020xxxx919",
-      "cashback": 4.00
-    },
-    {
       "rank": 8,
-      "phone": "020xxxx182",
+      "phone": "020xxxx919",
       "cashback": 4.00
     },
     {
@@ -74,27 +74,27 @@
     },
     {
       "rank": 2,
-      "phone": "020xxxx899",
+      "phone": "020xxxx977",
       "frequency": 7
     },
     {
       "rank": 3,
-      "phone": "020xxxx377",
-      "frequency": 6
+      "phone": "020xxxx899",
+      "frequency": 7
     },
     {
       "rank": 4,
-      "phone": "050xxxx680",
-      "frequency": 6
+      "phone": "020xxxx377",
+      "frequency": 7
     },
     {
       "rank": 5,
-      "phone": "020xxxx575",
+      "phone": "020xxxx182",
       "frequency": 5
     },
     {
       "rank": 6,
-      "phone": "020xxxx054",
+      "phone": "020xxxx046",
       "frequency": 5
     },
     {
@@ -104,17 +104,17 @@
     },
     {
       "rank": 8,
-      "phone": "020xxxx973",
-      "frequency": 4
+      "phone": "020xxxx575",
+      "frequency": 5
     },
     {
       "rank": 9,
-      "phone": "020xxxx977",
-      "frequency": 4
+      "phone": "020xxxx714",
+      "frequency": 5
     },
     {
       "rank": 10,
-      "phone": "020xxxx047",
+      "phone": "020xxxx172",
       "frequency": 4
     }
   ],
@@ -373,6 +373,21 @@
       15,
       15,
       0
+    ],
+    [
+      "25-Nov",
+      35,
+      34,
+      1331.0,
+      39.15,
+      120.0,
+      29,
+      19.42,
+      0.67,
+      1.60,
+      29,
+      29,
+      4
     ]
   ]
 }
