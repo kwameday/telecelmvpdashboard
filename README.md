@@ -1,5 +1,5 @@
 
-# Telecel Marketplace Pilot — Payments & Cashback Dashboard (Static JSON)
+# Telecel Marketplace Pilot — Payments & Cashback Dashboard
 
 This repo contains a static HTML dashboard that visualises Telecel Marketplace pilot performance.
 
