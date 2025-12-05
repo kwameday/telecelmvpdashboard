@@ -11,8 +11,8 @@
     "avgCashback": 0.74,
     "highestCashback": 4,
     "totalUsers": 316,
-    "uniqueUsers": 301,
-    "repeatUsers": 66
+    "uniqueUsers": 157,
+    "repeatUsers": 71
   },
   "leaderboard": [
     {
@@ -27,23 +27,23 @@
     },
     {
       "rank": 3,
+      "phone": "020xxxx312",
+      "cashback": 8.92
+    },
+    {
+      "rank": 4,
       "phone": "020xxxx899",
       "cashback": 7.70
     },
     {
-      "rank": 4,
+      "rank": 5,
       "phone": "020xxxx714",
       "cashback": 7.58
     },
     {
-      "rank": 5,
-      "phone": "020xxxx312",
-      "cashback": 7.52
-    },
-    {
       "rank": 6,
       "phone": "020xxxx182",
-      "cashback": 7.52
+      "cashback": 7.2
     },
     {
       "rank": 7,
@@ -52,13 +52,13 @@
     },
     {
       "rank": 8,
-      "phone": "020xxxx083",
-      "cashback": 5.80
+      "phone": "020xxxx806",
+      "cashback": 6.60
     },
     {
       "rank": 9,
-      "phone": "020xxxx806",
-      "cashback": 5.30
+      "phone": "020xxxx083",
+      "cashback": 5.80
     },
      {
       "rank": 10,
@@ -84,12 +84,12 @@
     },
     {
       "rank": 4,
-      "phone": "020xxxx182",
-      "frequency": 7
+      "phone": "020xxxx083",
+      "frequency": 8
     },
     {
       "rank": 5,
-      "phone": "020xxxx083",
+      "phone": "020xxxx182",
       "frequency": 7
     },
     {
@@ -104,17 +104,17 @@
     },
     {
       "rank": 8,
-      "phone": "020xxxx259",
-      "frequency": 5
+      "phone": "020xxxx312",
+      "frequency": 6
     },
     {
       "rank": 9,
-      "phone": "020xxxx312",
+      "phone": "020xxxx973",
       "frequency": 5
     },
     {
       "rank": 10,
-      "phone": "020xxxx172",
+      "phone": "020xxxx047",
       "frequency": 5
     }
   ],
