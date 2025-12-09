@@ -1,18 +1,18 @@
 {
-  "period": "October 21, 2025 to December 4, 2025",
+  "period": "October 21, 2025 to December 9, 2025",
   "summary": {
-    "totalTransactions": 341,
-    "successfulTransactions": 322,
-    "gmv": 13941,
-    "aov": 43.30,
+    "totalTransactions": 392,
+    "successfulTransactions": 371,
+    "gmv": 16164,
+    "aov": 43.57,
     "highestOrder": 200,
-    "successfulCashback": 303,
-    "totalCashback": 260.20,
-    "avgCashback": 0.74,
+    "successfulCashback": 352,
+    "totalCashback": 304.66,
+    "avgCashback": 0.75,
     "highestCashback": 4,
-    "totalUsers": 316,
-    "uniqueUsers": 157,
-    "repeatUsers": 71
+    "totalUsers": 361,
+    "uniqueUsers": 169,
+    "repeatUsers": 81
   },
   "leaderboard": [
     {
@@ -23,47 +23,47 @@
     {
       "rank": 2,
       "phone": "020xxxx977",
-      "cashback": 10.14
+      "cashback": 11.84
     },
     {
       "rank": 3,
       "phone": "020xxxx312",
-      "cashback": 8.92
+      "cashback": 10.62
     },
     {
       "rank": 4,
       "phone": "020xxxx899",
-      "cashback": 7.70
+      "cashback": 9.40
     },
     {
       "rank": 5,
+      "phone": "020xxxx083",
+      "cashback": 7.70
+    },
+    {
+      "rank": 6,
+      "phone": "020xxxx806",
+      "cashback": 7.68
+    },
+    {
+      "rank": 7,
       "phone": "020xxxx714",
       "cashback": 7.58
     },
     {
-      "rank": 6,
-      "phone": "020xxxx182",
-      "cashback": 7.2
-    },
-    {
-      "rank": 7,
-      "phone": "020xxxx377",
-      "cashback": 6.90
-    },
-    {
       "rank": 8,
-      "phone": "020xxxx806",
-      "cashback": 6.60
+      "phone": "020xxxx182",
+      "cashback": 7.20
     },
     {
       "rank": 9,
-      "phone": "020xxxx083",
-      "cashback": 5.80
+      "phone": "020xxxx377",
+      "cashback": 6.90
     },
      {
       "rank": 10,
-      "phone": "020xxxx575",
-      "cashback": 4.90
+      "phone": "020xxxx055",
+      "cashback": 5.22
     }
   ],
   "frequencyLeaderboard": [
@@ -74,47 +74,47 @@
     },
     {
       "rank": 2,
-      "phone": "020xxxx899",
-      "frequency": 8
+      "phone": "020xxxx083",
+      "frequency": 11
     },
     {
       "rank": 3,
-      "phone": "020xxxx377",
-      "frequency": 8
+      "phone": "020xxxx899",
+      "frequency": 9
     },
     {
       "rank": 4,
-      "phone": "020xxxx083",
+      "phone": "020xxxx977",
       "frequency": 8
     },
     {
       "rank": 5,
-      "phone": "020xxxx182",
-      "frequency": 7
+      "phone": "020xxxx377",
+      "frequency": 8
     },
     {
       "rank": 6,
-      "phone": "020xxxx714",
+      "phone": "020xxxx312",
       "frequency": 7
     },
     {
       "rank": 7,
-      "phone": "020xxxx977",
+      "phone": "020xxxx182",
       "frequency": 7
     },
     {
       "rank": 8,
-      "phone": "020xxxx312",
-      "frequency": 6
+      "phone": "020xxxx714",
+      "frequency": 7
     },
     {
       "rank": 9,
-      "phone": "020xxxx973",
-      "frequency": 5
+      "phone": "020xxxx046",
+      "frequency": 6
     },
     {
       "rank": 10,
-      "phone": "020xxxx047",
+      "phone": "020xxxx806",
       "frequency": 5
     }
   ],
@@ -448,6 +448,36 @@
       15,
       15,
       4
+    ],
+    [
+      "8-Dec",
+      20,
+      20,
+      825.0,
+      41.25,
+      100.0,
+      20,
+      16.50,
+      0.83,
+      2.00,
+      19,
+      19,
+      1
+    ],
+    [
+      "9-Dec",
+      31,
+      29,
+      1398.0,
+      48.21,
+      90.0,
+      29,
+      27.96,
+      0.96,
+      1.80,
+      26,
+      26,
+      5
     ]
   ]
 }
