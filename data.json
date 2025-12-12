@@ -17,105 +17,105 @@
   "leaderboard": [
     {
       "rank": 1,
+      "phone": "020xxxx977",
+      "cashback": 13.52
+    },
+    {
+      "rank": 2,
       "phone": "020xxxx232",
       "cashback": 12.78
     },
     {
-      "rank": 2,
-      "phone": "020xxxx977",
-      "cashback": 11.84
-    },
-    {
       "rank": 3,
       "phone": "020xxxx312",
-      "cashback": 10.62
+      "cashback": 12.02
     },
     {
       "rank": 4,
+      "phone": "020xxxx806",
+      "cashback": 9.88
+    },
+    {
+      "rank": 5,
       "phone": "020xxxx899",
       "cashback": 9.40
     },
     {
-      "rank": 5,
-      "phone": "020xxxx083",
-      "cashback": 7.70
-    },
-    {
       "rank": 6,
-      "phone": "020xxxx806",
-      "cashback": 7.68
+      "phone": "020xxxx083",
+      "cashback": 8.50
     },
     {
       "rank": 7,
       "phone": "020xxxx714",
-      "cashback": 7.58
+      "cashback": 8.38
     },
     {
       "rank": 8,
-      "phone": "020xxxx182",
-      "cashback": 7.20
+      "phone": "020xxxx882",
+      "cashback": 7.60
     },
     {
       "rank": 9,
-      "phone": "020xxxx377",
-      "cashback": 6.90
+      "phone": "020xxxx182",
+      "cashback": 7.20
     },
      {
       "rank": 10,
-      "phone": "020xxxx055",
-      "cashback": 5.22
+      "phone": "020xxxx377",
+      "cashback": 6.90
     }
   ],
   "frequencyLeaderboard": [
     {
       "rank": 1,
+      "phone": "020xxxx083",
+      "frequency": 13
+    },
+    {
+      "rank": 2,
       "phone": "020xxxx232",
       "frequency": 12
     },
     {
-      "rank": 2,
-      "phone": "020xxxx083",
-      "frequency": 11
+      "rank": 3,
+      "phone": "020xxxx977",
+      "frequency": 10
     },
     {
-      "rank": 3,
+      "rank": 4,
       "phone": "020xxxx899",
       "frequency": 9
     },
     {
-      "rank": 4,
-      "phone": "020xxxx977",
-      "frequency": 8
-    },
-    {
       "rank": 5,
-      "phone": "020xxxx377",
+      "phone": "020xxxx714",
       "frequency": 8
     },
     {
       "rank": 6,
       "phone": "020xxxx312",
-      "frequency": 7
+      "frequency": 8
     },
     {
       "rank": 7,
+      "phone": "020xxxx377",
+      "frequency": 8
+    },
+    {
+      "rank": 8,
       "phone": "020xxxx182",
       "frequency": 7
     },
     {
-      "rank": 8,
-      "phone": "020xxxx714",
-      "frequency": 7
-    },
-    {
       "rank": 9,
-      "phone": "020xxxx046",
+      "phone": "020xxxx806",
       "frequency": 6
     },
     {
       "rank": 10,
-      "phone": "020xxxx806",
-      "frequency": 5
+      "phone": "020xxxx047",
+      "frequency": 6
     }
   ],
   "daily": [
