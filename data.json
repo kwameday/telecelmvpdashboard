@@ -1,39 +1,39 @@
 {
-  "period": "October 21, 2025 to December 11, 2025",
+  "period": "October 21, 2025 to December 15, 2025",
   "summary": {
-    "totalTransactions": 411,
-    "successfulTransactions": 389,
-    "gmv": 17013,
-    "aov": 43.73,
+    "totalTransactions": 430,
+    "successfulTransactions": 408,
+    "gmv": 17939,
+    "aov": 43.97,
     "highestOrder": 200,
-    "successfulCashback": 370,
-    "totalCashback": 321.64,
-    "avgCashback": 0.76,
+    "successfulCashback": 387,
+    "totalCashback": 338.06,
+    "avgCashback": 0.77,
     "highestCashback": 4,
-    "totalUsers": 377,
-    "uniqueUsers": 172,
-    "repeatUsers": 84
+    "totalUsers": 396,
+    "uniqueUsers": 177,
+    "repeatUsers": 86
   },
   "leaderboard": [
     {
       "rank": 1,
+      "phone": "020xxxx232",
+      "cashback": 13.58
+    },
+    {
+      "rank": 2,
       "phone": "020xxxx977",
       "cashback": 13.52
     },
     {
-      "rank": 2,
-      "phone": "020xxxx232",
+      "rank": 3,
+      "phone": "020xxxx806",
       "cashback": 12.78
     },
     {
-      "rank": 3,
+      "rank": 4,
       "phone": "020xxxx312",
       "cashback": 12.02
-    },
-    {
-      "rank": 4,
-      "phone": "020xxxx806",
-      "cashback": 9.88
     },
     {
       "rank": 5,
@@ -75,7 +75,7 @@
     {
       "rank": 2,
       "phone": "020xxxx232",
-      "frequency": 12
+      "frequency": 13
     },
     {
       "rank": 3,
@@ -104,17 +104,17 @@
     },
     {
       "rank": 8,
-      "phone": "020xxxx182",
+      "phone": "020xxxx806",
       "frequency": 7
     },
     {
       "rank": 9,
-      "phone": "020xxxx806",
-      "frequency": 6
+      "phone": "020xxxx182",
+      "frequency": 7
     },
     {
       "rank": 10,
-      "phone": "020xxxx047",
+      "phone": "020xxxx973",
       "frequency": 6
     }
   ],
@@ -493,6 +493,21 @@
       16,
       16,
       2
+    ],
+     [
+      "15-Dec",
+      19,
+      19,
+      926.0,
+      48.74,
+      145.0,
+      17,
+      16.42,
+      0.97,
+      2.90,
+      19,
+      19,
+      0
     ]
   ]
 }
